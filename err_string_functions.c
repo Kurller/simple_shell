@@ -33,7 +33,7 @@ int _eputchar(char c)
 
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
-	/*	write(2, buf, i);*/
+		write(2, buf, i);
 		i = 0;
 	}
 	if (c != BUF_FLUSH)
@@ -56,7 +56,7 @@ int _putfd(char c, int fd)
 
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
-	/*	write(fd, buf, i);*/
+		write(fd, buf, i);
 		i = 0;
 	}
 	if (c != BUF_FLUSH)
