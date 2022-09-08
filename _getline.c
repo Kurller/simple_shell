@@ -142,4 +142,4 @@ char *__strchr(char *s, char c, ssize_t size)
 		s++;
 	} while (--size > 0);
 	return (NULL);
-
+}
