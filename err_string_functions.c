@@ -80,6 +80,6 @@ int _putsfd(char *str, int fd)
 	while (*str)
 	{
 		i += _putfd(*str++, fd);
-      }
+}
 	return (i);
 }
